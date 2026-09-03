@@ -37,7 +37,7 @@ f = open('README', 'r')
 description_from_readme = '<pre>' + f.read() + '</pre>'
 f.close()
 
-setup(name='pyliblzfse',
+setup(name='pyliblzfse-build',
       version='0.4.1',
       license='MIT',
       author='Yogesh Khatri',
