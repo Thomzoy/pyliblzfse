@@ -18,6 +18,11 @@ jobs:
     container:
       image: debian:bookworm
     steps:
+      - name: Install git
+        run: |
+          apt-get update
+          apt-get install -y --no-install-recommends git ca-certificates
+
       - name: Checkout source
         uses: actions/checkout@v7
         with:
